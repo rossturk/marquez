@@ -59,7 +59,6 @@ dependencies {
     testCompile 'org.mockito:mockito-core:3.8.0'
     testCompile 'org.testcontainers:postgresql:1.15.2'
 }
-
 task testUnit(type: Test) {
     useJUnit {
         includeCategories 'marquez.UnitTests'
@@ -133,6 +132,9 @@ publishing {
 
 signing {
     required { isReleaseVersion }
+    def signingKey = findProperty("signingKey")
+    def signingPassword = findProperty("signingPassword")
+    useInMemoryPgpKeys(signingKey, signingPassword)
     sign publishing.publications.mavenJava
 }
 
