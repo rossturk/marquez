@@ -301,7 +301,7 @@ _Congrats_! You successfully step through a troubleshooting scenario of a failin
 
 # Next Steps
 
-* Review the Marquez [HTTP API](https://marquezproject.github.io/marquez/openapi.html) used to collect Airflow DAG metadata and learn how to build your own integrations using OpenLineage
+* Review the Marquez [HTTP API](https://marquezproject.ai/openapi.html) used to collect Airflow DAG metadata and learn how to build your own integrations using OpenLineage
 * Take a look at [`openlineage-spark`](https://openlineage.io/integration/apache-spark) integration that can be used with Airflow
 
 # Feedback
